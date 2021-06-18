@@ -23,7 +23,7 @@ James Efienemokwu - jefedcreator
 CONTRIBUTION GUIDE
 Fork the repository
 Clone and then open it up on your code editor
-Open terminal and set upsream branch: git remote add upstream https://github.com/zuri-training/E-Care-FE-pjt-24.git
+Open terminal and set upsream branch: git remote add upstream https://github.com/zuri-training/AyaloOnline-fe-pjt-101.git
 Pull upstream git pull upstream develop
 Create a new branch for the task your are doing eg: git checkout -b home-page
 After making changes, do git add .
