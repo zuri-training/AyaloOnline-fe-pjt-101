@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #ffff;
+    width: 100%;
+}
+
+span{
+    color: #53b175;
+    font-weight: 900;
+}
+
+.navbar-brand{
+    font-weight: 900;
+}
+
+.navbar-light .navbar-nav .active>.nav-link{
+    color: #53b175;
+    font-weight: 900;
+}
+
+.form-inline .form-control{
+    width: 300px;
+    text-align: center;
+    font-weight: 300;
+}
+
+.btn-success{
+    width: 85px;
+    color: white;
+    background-color: #53b175;
+}
+
+.btn-success:hover{
+    background-color: #53b175;
+    border: none;
+}
+
+.btn-outline-success{
+    width: 85px;
+    color: #53b175;
+    border-color: #53b175;
+}
+
+.btn-outline-success:hover{
+    background-color: white;
+    color: #53b175;
+}
+
+.container{
+    padding: 70px;
+    padding-bottom: 70px;
+}
+
+h2{
+    font-weight: 900;
+    font-size: x-large;
+    margin-bottom: 30px;
+}
+
+h5{
+    font-weight: 900;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container p{
+    line-height: 1.5rem;
+}
+
+.footer{
+    padding-bottom: 0;
+    background: #53B175;
+}
+
+.contact{
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    font-weight: 900;
+}
+
+.fa{
+    color: white;
+    margin: 15px;
+}
+
+.copy-right{
+    color: white;
+    padding-bottom: 20px;
+    font-weight: 900;
+    margin-left: 50px;
+}
