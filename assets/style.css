@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header {
+  background: #FCFCFC;
+}
+
+nav input[type="search"] {
+  width: 364px;
+  height: 51px;
+  background: #f2f3f2;
+  border-radius: 15px;
+  padding: 1%;
+}
+
+input[type="button"] {
+  background: #53b175;
+  border-radius: 10px;
+  height: 51px;
+  width: 125px;
+  border-radius: 10px;
+  color: white;
+}
+
+header > nav > ul > input[type=button]:nth-child(5){
+    background-color: white;
+    color: #53b175;
+}
+
+header > nav {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+header span{
+    color: #53b175;;
+}
+
+header a {
+  color: #53b175;
+}
+
+header h6 {
+  font-family: Gilroy-ExtraBold;
+  font-size: 34.6196px;
+  line-height: 14px;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+
+#firstsection {
+  height: 100vh;
+  background: #FCFCFC;
+
+}
+
+#firstsection main {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.borrow {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  justify-content: space-around;
+  text-align: center;
+  /* align-items: flex-start; */
+  padding-top: 20%;
+}
+
+.borrow h1 {
+  font-family: Gilroy-ExtraBold;
+  font-size: 4rem;
+  line-height: 30px;
+  color: #030303;
+}
+
+.borrow button {
+  background: #53b175;
+  color: white;
+  border-radius: 19px;
+  height: 67px;
+  width: 370px;
+}
+
+#secondsection {
+  height: 100vh;
+  background-color: #53b175;
+}
+
+#secondsection > main {
+  width: 90%;
+  margin: 2% auto;
+  height: 100%;
+}
+
+#secondsection > main > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#secondsection h2 {
+  color: white;
+  margin-bottom: 1%;
+}
+
+#offer {
+  display: flex;
+  justify-content: space-between;
+  height: 40%;
+}
+
+.offer {
+  width: 23%;
+  border-radius: 23px;
+  height: 150px;
+  padding: 2%;
+  background-color: white;
+}
+
+#categories {
+  display: flex;
+  height: 60%;
+  margin-top: 3%;
+}
+
+.categories img {
+  width: 100%;
+  height: 100%;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+}
+
+.asset img {
+  width: 80%;
+}
+
+.asset {
+  padding: 3%;
+  width: 22%;
+  height: 40%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1.28px solid #e2e2e2;
+  border-radius: 22.1434px;
+}
+
+.asset > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.asset > div img {
+  width: 20%;
+}
+
+#thirdsection {
+  background: #fcfcfc;
+}
+
+#thirdsection > main {
+  width: 90%;
+  margin: 10% auto;
+  height: 50vh;
+}
+
+#thirdsection h3 {
+  margin-bottom: 2%;
+}
+
+.reviews {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.review {
+  display: flex;
+  text-align: center;
+  /* flex-direction: column;
+    align-items: center; */
+  justify-content: space-between;
+  width: 30%;
+  height: 100%;
+  padding: 2%;
+  border-radius: 18px;
+  border: 1px solid #53b175;
+  background-color: white;
+}
+
+.review div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviewer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  height: 70%;
+}
+
+.reviewer img {
+  width: 100%;
+  backdrop-filter: blur(4px);
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  margin: 3% auto;
+}
+
+.rent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rent button {
+  background: #53b175;
+  border-radius: 19px;
+  color: white;
+  height: 50px;
+  width: 25%;
+  cursor: pointer;
+}
+
+footer {
+  color: white;
+  background: #53b175;
+  height: 30vh;
+}
+
+footer main {
+  display: flex;
+  align-items: center;
+  height: 80%;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > main > span:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
