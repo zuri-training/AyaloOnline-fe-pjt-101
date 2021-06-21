@@ -1,9 +1,9 @@
-/* Font Style doesn't work yet */
+/* Font Style*/
 
-/* @font-face {
-    src:url('./assets/fonts/gilroy/Gilroy-Light.ttf');
-    font-family:gilroy;
-} */
+@font-face {
+    src:url('./assets/fonts/gilroy/Gilroy-Bold.ttf');
+    font-family:'Gilroy';
+}
 
 /* Mobile View */
 @media screen 
@@ -13,7 +13,7 @@
         *{
             margin: 0;
             padding: 0;
-            font-family: Gilroy-Light;
+            font-family:'Gilroy';
         }
 
         body{
@@ -51,7 +51,7 @@
             background-color: #f2f3f2;
             border-radius: 1em;
             border: 1px solid #f2f3f2;
-            background-image: url('/assets/icons/navigation/search.svg');
+            background-image: url('./assets/icons/navigation/search.svg');
             background-repeat: no-repeat;
             background-position: 93%;
             margin-top: 3%;
@@ -174,84 +174,3 @@
 
 
 
-
-
-/* Backup */
-
-/* Mobile View */
-/*
-@media screen 
-    and (min-width:375px)
-    and (max-width:414px){
-    
-    *{
-        margin: 0;
-        padding: 0;
-        font-family: Gilroy-Light;
-    }
-    
-    .header{
-        display: flex;
-        flex-direction: row;
-        margin-top: 53px;
-        margin-left: 26px;
-    }
-    .back-btn{
-        margin-left: 26px; 
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-    .header p{
-        text-align: center;
-        font-size: 20px;
-        line-height: 29px;
-        margin-left: 22%;
-        font-weight: bold;
-    }
-    main{
-        text-align: center;
-        justify-content: center;
-        
-    }
-
-    input[type=text]{
-        width: 364px;
-        height: 51px;
-        background-color: #f2f3f2;
-        border-radius: 15px;
-        border: 1px solid #f2f3f2;
-        background-image: url('/assets/icons/search.svg');
-        background-repeat: no-repeat;
-        background-position: right;
-        margin-top: 30px;
-        margin-left: 26px;
-    }
-    ::placeholder {
-        color: #7c7c7c;
-        text-align: center;
-        size: 142px;
-      }
-    div.rect{
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .col-1{
-        width: 174px;
-        height: 189px;
-        background-color: white;
-        border: 1px solid #53B175;
-        border-radius: 18px;
-    }
-
-    .col-2{
-        width: 174px;
-        height: 189px;
-        background-color: white;
-        border: 1px solid #53B175;
-        border-radius: 18px;
-    }
-        
-}
-
-*/
