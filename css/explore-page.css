@@ -1,7 +1,7 @@
 /* Font Style*/
 
 @font-face {
-    src:url('./assets/fonts/gilroy/Gilroy-Bold.ttf');
+    src:url('/assets/fonts/gilroy/Gilroy-Bold.ttf');
     font-family:'Gilroy';
 }
 
