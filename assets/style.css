@@ -8,8 +8,30 @@ a {
   text-decoration: none;
 }
 
+a:hover{
+  text-decoration: underline;
+}
+
 ul {
   list-style-type: none;
+}
+
+button{
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="button"]{
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="search"]{
+  outline: none;
+  cursor: pointer;
+  border: none;
 }
 
 header {
@@ -21,7 +43,15 @@ nav input[type="search"] {
   height: 51px;
   background: #f2f3f2;
   border-radius: 15px;
-  padding: 1%;
+  padding: 1% 10% 1% 5%;
+  position: relative;
+}
+
+nav img{
+  position: absolute;
+  left: 33%;
+  padding: 5%;
+  z-index: 2;
 }
 
 input[type="button"] {
@@ -83,6 +113,7 @@ nav > ul {
 .borrow {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   width: 50%;
   height: 70%;
   justify-content: space-around;
@@ -107,7 +138,7 @@ nav > ul {
 }
 
 #secondsection {
-  height: 100vh;
+  height: 120vh;
   background-color: #53b175;
 }
 
@@ -124,7 +155,7 @@ nav > ul {
 
 #secondsection h2 {
   color: white;
-  margin-bottom: 1%;
+  margin: 2% 0;
 }
 
 #offer {
@@ -134,11 +165,19 @@ nav > ul {
 }
 
 .offer {
+  position: relative;
   width: 23%;
   border-radius: 23px;
   height: 150px;
   padding: 2%;
   background-color: white;
+}
+
+.offer img{
+  position: absolute;
+  bottom: 90%;
+  left: 40%;
+  height: 30px;
 }
 
 #categories {
@@ -182,8 +221,22 @@ nav > ul {
   justify-content: space-between;
 }
 
-.asset > div img {
-  width: 20%;
+.asset > div:nth-child(2) img{
+  /* width: 20%; */
+  padding: 2%;
+  height: 40px;
+  width: 50px;
+  border-radius: 17px;
+  background-color:#53b175;
+}
+
+.asset > div:nth-child(2){
+  height: 20%;
+}
+
+.asset > div:nth-child(1){
+  padding: 2%;
+  height: 70%;
 }
 
 #thirdsection {
@@ -278,7 +331,7 @@ footer main {
   flex-direction: column;
 }
 
-footer span {
+footer > main > span {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -288,4 +341,11 @@ footer > main > span:nth-child(3) {
   display: flex;
   justify-content: space-between;
   width: 20%;
+}
+
+footer > span{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 8%;
 }
