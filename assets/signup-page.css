@@ -1,0 +1,125 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Khula', sans-serif;
+}
+
+
+a {
+    color: #53b175;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    border-radius: 15px;
+}
+
+form {
+    width: 100%;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+#signup-page {
+    width: 90%;
+    margin: 20px auto 0 auto;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.info {
+    margin: 15px 0 10px 0;
+    border: none;
+    outline: none;
+    font-weight: 600;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 20px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.register {
+    background: #53b175;
+    margin: 25px 0 5px 0;
+    padding: 19px;
+    border: none;
+    color: white;
+}
+
+.select {
+    width: 85%;
+    margin: 15px 0 10px 0;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+    .select option {
+        font-size: 14px;
+    }
+
+.signin {
+    text-align: center;
+}
+
+.signin a {
+    margin-left: 5px;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 20px 0;
+    padding: 10px;
+    background: #FCFCFC;
+    border: 1px solid #53b175;
+    color: #53b175;
+}
+
+.signup img {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.35rem;
+}
+
+/*TAB VIEW*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #signup-page {
+        width: 70%;
+        padding: 50px 10px 50px 10px;
+        border: 1px solid rgba(124,124,124,.2);
+        border-radius: 10px;
+    }
+}
+
+/*DESKTOP VIEW*/
+@media screen and (min-width: 769px) {
+    #signup-page {
+        width: 40%;
+        padding: 50px 10px 50px 10px;
+        border: 1px solid rgba(124,124,124,.2);
+        border-radius: 10px;
+        margin: 20px auto;
+    }
+}

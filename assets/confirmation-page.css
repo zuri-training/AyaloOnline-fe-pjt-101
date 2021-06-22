@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,400;0,500;1,700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Khula", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #53b175;
+}
+
+button {
+    width: 100%;
+    margin: 25px 0 10px 0;
+    padding: 19px;
+    background: #53b175;
+    border: none;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    outline: none;
+}
+
+form {
+	width: 100%;
+}
+
+h2 {
+	font-size: 22px;
+	margin-bottom: 10px;
+}
+
+p {
+	font-weight: 600;
+	margin-bottom: 40px;
+}
+
+
+#New-Password {
+    width: 90%;
+    margin: 80px auto;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.info {
+	margin: 15px 0 10px 0;
+	border: none;
+	outline: none;
+	font-weight: 600;
+}
+
+.input {
+	display: flex;
+	flex-direction: column;
+	margin: 30px 0 20px 0;
+	font-size: 14px;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+/*TAB VIEW*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    #New-Password {
+        width: 70%;
+        padding: 50px 10px 50px 10px;
+        border: 1px solid rgba(124,124,124,.2);
+        border-radius: 10px;
+    }
+}
+
+/*DESKTOP VIEW*/
+@media screen and (min-width: 769px) {
+    #New-Password {
+        width: 30%;
+        margin: 20px auto;
+        padding: 50px 10px 50px 10px;
+        border: 1px solid rgba(124,124,124,.2);
+        border-radius: 10px;
+    }
+}

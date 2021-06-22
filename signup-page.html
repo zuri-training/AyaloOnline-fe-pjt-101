@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="assets/signup-page.css"/>
+</head>
+<body>
+    <form>
+        <div id="signup-page">
+            <h2>Sign Up</h2>
+            <p>Enter your credentials to continue</p>
+
+            <div class="input">
+                <label for="user-name">Username</label>
+                <input type="text" class="info" name="user-name" id="user-name" value="" placeholder="enter your username" />
+            </div>
+
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" class="info" name="email" id="email" value="" placeholder="enter your email" />
+            </div>
+
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="number" class="info" name="password" id="password" value="" />
+            </div>
+
+            <div class="input">
+                <label for="account-type">Account Type</label>
+                <select class="select" name="account-type" id="account-type">
+                    <option value="lessee">Lessee</option>
+                    <option value="lessor">Lessor</option>
+                </select>
+            </div>
+
+            <p>
+            <span>By continuing you agree to our</span> 
+            <a href="#">Terms of Service</a> <span>and</span>
+            <a href="#">Privacy Policy</a>
+            <span>.</span>
+            </p>
+
+            <button class="register">Register</button>
+
+            <button class="signup"><img src="assets/visual assets/google icon.png" alt="google icon">Sign up with Google</button>
+
+            <p class="signin"><span>Already have an account?</span><a href="login-page.html">Sign In</a></p>
+        </div>
+    </form>
+</body>
+</html>
