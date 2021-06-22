@@ -18,14 +18,16 @@
           placeholder="Search for Equipments "
           value=""
         />
-        <img src="./assets/visual assets/search icon.svg" alt="" />
-        <ul>
+        <img src="./assets/visual assets/search icon.svg" alt="" class="search"/>
+        <ul id="nav-ul">
           <li><a href="">Home</a></li>
           <li><a href="">FAQ</a></li>
           <li><a href="">Connect</a></li>
           <input type="button" value="Sign up" />
           <input type="button" value="Log in" />
         </ul>
+        <img src="./assets/visual assets/icon-hamburger.svg" alt="" id="hamburger" onclick=" toggleMenu()">
+        <img src="./assets/visual assets/icon-close.svg" alt="" id="close" style="display: none; position: relative; z-index: 3; cursor: pointer;" onclick=" toggleMenu()">
       </nav>
     </header>
     <section id="firstsection">
@@ -39,8 +41,8 @@
           </p>
           <button>Rent Equipment</button>
         </div>
-        <div>
-          <img src="" alt="" />
+        <div class="heroimg">
+          <img src="./assets/visual assets/hero img.png" alt="" />
         </div>
       </main>
     </section>
@@ -253,7 +255,7 @@
           <div>
             <img src="./assets/visual assets/check.svg" alt="" />
             <p>75k+</p>
-            <p>Successful rentals</p>
+            <p>Successful <br> rentals</p>
           </div>
           <div>
             <img src="./assets/visual assets/Vector 2.svg" alt="" />
@@ -270,11 +272,11 @@
       <main>
         <span>
           <img src="./assets/visual assets/Vector, 2.svg" />
-          08123756120, 09098793301
+          <p> 08123756120, 09098793301</p>
         </span>
         <span>
           <img src="./assets/visual assets/Vector 3.svg" alt="" />
-          21, Babare Street, Magado, Lagos State
+         <p>21, Babare Street, Magado, Lagos State</p> 
         </span>
         <span>
           <img src="./assets/visual assets/Vector 4.svg" alt="" />
@@ -289,4 +291,5 @@
       >
     </footer>
   </body>
+  <script src="./assets/index.js"></script>
 </html>
