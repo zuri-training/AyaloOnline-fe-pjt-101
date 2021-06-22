@@ -3,6 +3,13 @@
 @font-face {
     src:url('/assets/fonts/gilroy/Gilroy-Bold.ttf');
     font-family:'Gilroy';
+
+}
+
+@font-face {
+    src:url(/assets/fonts/gilroy/Gilroy-Light.ttf);
+    font-family:'Gilroy-light';
+    
 }
 
 /* Desktop View*/
@@ -18,6 +25,7 @@
 }
 
 
+
 /* Mobile View */
 @media screen 
     and (min-width:320px)
@@ -28,6 +36,7 @@
             padding: 0;
             font-family:'Gilroy';
         }
+     
 
         body{
         background-color: #fcfcfc;
@@ -50,8 +59,9 @@
             width:100%;
             text-align: center;
             line-height: 2em;
-            font-weight: bold;
+            font-weight: bold; 
         }
+
         main{
             text-align: center;
             justify-content: center;
@@ -93,7 +103,7 @@
         
         .col-1{
             width: 40%;
-            height: 10em;
+            height:50vw;
             background-color: white;
             border: 1px solid #53B175;
             border-radius: 10%;
@@ -104,18 +114,27 @@
 
         .col-2{
             width: 40%;
-            height: 10em;
+            height: 50vw;
             background-color: white;
             border: 1px solid #53B175;
             border-radius: 10%;
             padding: 1%;
         }
 
-        #box-7{
-            margin-bottom: 6.5em;
+        div.bottom-row{
+            display: flex;
+            flex-direction:row;
         }
-        
-        #box-8{
+
+        div.cart-background{
+            width:16vw;
+            height:16vw;
+            background-color: #53B175;
+            border-radius: 30%;
+            padding: 0 auto;
+        }
+
+        #box-5,#box-6{
             margin-bottom: 6.5em;
         }
         
@@ -123,8 +142,8 @@
         /* Box Background Images */
 
         img.equipments{
-            width:94%;
-            height:75%;
+            width:100%;
+            height:50%;
             object-fit: contain;
         }
         /* Footer Navigation Bar */
@@ -191,3 +210,4 @@
 
 
 
+    
