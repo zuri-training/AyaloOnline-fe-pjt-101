@@ -1,7 +1,6 @@
-const hamburger = document.getElementById('hamburger')
-const close = document.getElementById('close')
-const nav = document.getElementById('nav-ul') 
-
+const hamburger = document.getElementById('hamburger');
+const close = document.getElementById('close');
+const nav = document.getElementById('nav-ul');
 
 function toggleMenu() {
     if (nav.classList.contains("show")) {
@@ -12,5 +11,13 @@ function toggleMenu() {
       nav.classList.add("show");
       close.style.display = "block";
       hamburger.style.display = "none";
-    }
-  }
+    };
+}
+
+function signup() {
+    window.location.href = "signup-page.html";
+}
+
+function login() {
+    window.location.href = 'login-page.html';
+}
