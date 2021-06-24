@@ -6,29 +6,36 @@
 
 /*font styles*/
 @font-face {
-  font-family: 'Gilroy Bold';
-  src: url('./fonts/Gilroy-Bold.ttf');
+  font-family: "Gilroy Bold";
+  src: url("./fonts/Gilroy-Bold.ttf");
 }
 
 @font-face {
-  font-family: 'Gilroy Medium';
-  src: url('./fonts/Gilroy-Medium.ttf');
+  font-family: "Gilroy Medium";
+  src: url("./fonts/Gilroy-Medium.ttf");
 }
 
 @font-face {
-  font-family: 'Gilroy Light';
-  src: url('./fonts/Gilroy-Light.ttf');
+  font-family: "Gilroy Light";
+  src: url("./fonts/Gilroy-Light.ttf");
 }
 
-h1, h2, h3, h4, h5, h6{
-  font-family: 'Gilroy Bold';
+@font-face {
+  font-family: "Gilroy Regular";
+  src: url("./fonts/Gilroy-Regular.ttf");
 }
 
-p, a{
-  font-family: 'Gilroy-Light';
+@font-face {
+  font-family: "Gilroy Regular Italic";
+  src: url("./fonts/Gilroy-RegularItalic.ttf");
 }
 
-svg{
+@font-face {
+  font-family: "Gilroy Extra Bold";
+  src: url("./fonts/Gilroy-ExtraBold.ttf");
+}
+
+svg {
   width: 100%;
 }
 
@@ -36,7 +43,7 @@ a {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
@@ -44,29 +51,34 @@ ul {
   list-style-type: none;
 }
 
-button{
+button {
   outline: none;
   cursor: pointer;
   border: none;
-  font-family: 'Gilroy Medium';
+  font-family: "Gilroy Medium";
+  border-radius: 19px;
+  height: 67px;
+  width: 370px;
 }
 
-input[type="button"]{
+input[type="button"] {
   outline: none;
   cursor: pointer;
   border: none;
-  font-family: 'Gilroy Medium';
+  font-family: "Gilroy Extra Bold";
+  font-size: 20px;
+  line-height: 18px;
 }
 
-input[type="search"]{
+input[type="search"] {
   outline: none;
   cursor: pointer;
   border: none;
-  font-family: 'Gilroy Medium';
+  font-family: "Gilroy Medium";
 }
 
 header {
-  background: #FCFCFC;
+  background: #fcfcfc;
 }
 
 nav input[type="search"] {
@@ -76,16 +88,21 @@ nav input[type="search"] {
   border-radius: 15px;
   padding: 1% 10% 1% 5%;
   position: relative;
+  font-family: "Gilroy Regular";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #7c7c7c;
 }
 
-.search{
+.search {
   position: absolute;
   left: 33%;
   padding: 5%;
   z-index: 2;
 }
 
-#hamburger{
+#hamburger {
   display: none;
 }
 
@@ -98,9 +115,9 @@ input[type="button"] {
   color: white;
 }
 
-header > nav > ul > input[type=button]:nth-child(5){
-    background-color: white;
-    color: #53b175;
+header > nav > ul > input[type="button"]:nth-child(5) {
+  background-color: white;
+  color: #53b175;
 }
 
 header > nav {
@@ -109,22 +126,23 @@ header > nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
+  padding: 50px 0;
 }
 
-header span{
-    color: #53b175;;
+header span {
+  color: #53b175;
 }
 
 header a {
   color: #53b175;
-  font-family: 'Gilroy-Light';
+  font-family: "Gilroy-Light";
 }
 
 header h6 {
-  font-family: 'Gilroy Medium';
-  font-size: 34.6196px;
+  font-family: "Gilroy Extra Bold";
+  font-size: 35px;
   line-height: 14px;
+  text-align: left;
 }
 
 nav > ul {
@@ -134,14 +152,15 @@ nav > ul {
   justify-content: space-between;
 }
 
-nav a{
-  font-family:'Gilroy Light';
+nav a {
+  font-family: "Gilroy Bold";
+  font-size: 20px;
+  line-height: 23px;
 }
 
 #firstsection {
   height: 100vh;
-  background: #FCFCFC;
-
+  background: #fcfcfc;
 }
 
 #firstsection main {
@@ -152,12 +171,14 @@ nav a{
   justify-content: space-between;
 }
 
-.heroimg{
+.heroimg {
+  display: flex;
+  align-items: center;
   text-align: center;
   padding: 10%;
 }
 
-.heroimg img{
+.heroimg img {
   width: 100%;
 }
 
@@ -170,34 +191,38 @@ nav a{
   justify-content: space-around;
   text-align: center;
   /* align-items: flex-start; */
-  padding-top: 20%;
+  padding-top: 15%;
 }
 
 .borrow h1 {
-  font-family: 'Gilroy Bold';
-  font-size: 4rem;
-  /* line-height: 30px; */
+  font-family: "Gilroy Extra Bold";
+  font-size: 50px;
   color: #030303;
   text-align: left;
 }
 
 .borrow p {
-  font-family: 'Gilroy Light';
+  font-family: "Gilroy Medium";
   color: #030303;
   text-align: left;
+  font-size: 24px;
+  color: #000000;
 }
 
 .borrow button {
   background: #53b175;
   color: white;
   border-radius: 19px;
-  height: 67px;
+  height: 66px;
+  width: 233px;
   width: 370px;
-  font-family: 'Gilroy Light';
+  font-family: "Gilroy Extra Bold";
+  font-size: 20px;
+  line-height: 18px;
 }
 
 #secondsection {
-  height: 120vh;
+  height: 1366.18px;
   background-color: #53b175;
 }
 
@@ -212,10 +237,12 @@ nav a{
   flex-direction: column;
 }
 
-#secondsection h2 {
-  color: white;
-  margin: 2% 0;
-  font-family: 'Gilroy Bold';
+#secondsection > main > div:nth-child(1) > h2 {
+  padding: 10% 0 5% 0;
+  font-family: "Gilroy Bold";
+  font-size: 36px;
+  line-height: 28px;
+  color: #fafafa;
 }
 
 #offer {
@@ -226,20 +253,34 @@ nav a{
 
 .offer {
   position: relative;
-  width: 23%;
+  width: 20%;
   border-radius: 23px;
-  height: 150px;
-  padding: 2%;
+  height: 241.92px;
+  padding: 3%;
   background-color: white;
+  text-align: center;
 }
 
-.offer p{
-  font-family: 'Gilroy Light';
+.offer h3 {
+  font-family: "Gilroy Bold";
+  font-size: 20px;
+  line-height: 23px;
+  text-align: left;
+  color: #030303;
+  padding: 10px 0;
 }
 
-.offer img{
+.offer p {
+  font-family: "Gilroy Regular";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #181725;
+}
+
+.offer img {
   position: absolute;
-  bottom: 90%;
+  bottom: 95%;
   left: 40%;
   height: 30px;
 }
@@ -250,9 +291,12 @@ nav a{
   margin-top: 3%;
 }
 
-.categories img {
-  width: 100%;
-  height: 100%;
+#categories h2 {
+  font-family: "Gilroy Extra Bold";
+  font-size: 36px;
+  line-height: 28px;
+  color: #fcfcfc;
+  padding-top: 5%;
 }
 
 .categories {
@@ -260,7 +304,18 @@ nav a{
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  height: 80%;
+}
+
+.categories img {
+  width: 100%;
   height: 100%;
+}
+
+.categories h2 {
+  font-family: "Gilroy Extra Bold";
+  font-size: 36px;
+  line-height: 28px;
 }
 
 .asset img {
@@ -269,8 +324,9 @@ nav a{
 
 .asset {
   padding: 3%;
-  width: 22%;
-  height: 40%;
+  height: 240.44041442871094px;
+  width: 23%;
+  border-radius: 22.143396377563477px;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -279,8 +335,12 @@ nav a{
   border-radius: 22.1434px;
 }
 
-.asset p{
-  font-family: 'Gilroy Light';
+.asset p {
+  font-family: "Gilroy Bold";
+  font-size: 19.683px;
+  line-height: 23px;
+  text-align: center;
+  color: #030303;
 }
 
 .asset > div {
@@ -289,27 +349,27 @@ nav a{
   justify-content: space-between;
 }
 
-.asset > div:nth-child(2) img{
+.asset > div:nth-child(2) img {
   /* width: 20%; */
   padding: 2%;
   height: 40px;
   width: 50px;
   border-radius: 17px;
-  background-color:#53b175;
+  background-color: #53b175;
 }
 
-.asset > div:nth-child(2){
+.asset > div:nth-child(2) {
   height: 20%;
 }
 
-.asset > div:nth-child(1){
+.asset > div:nth-child(1) {
   padding: 2%;
   height: 70%;
 }
 
 #thirdsection {
   background: #fcfcfc;
-  height: 80vh;
+  height: 90vh;
 }
 
 #thirdsection > main {
@@ -318,8 +378,11 @@ nav a{
 }
 
 #thirdsection h3 {
-  font-family: 'Gilroy Bold';
-  margin-bottom: 2%;
+  padding: 150px 0 50px;
+  font-family: "Gilroy Extra Bold";
+  font-size: 36px;
+  line-height: 28px;
+  color: #030303;
 }
 
 .reviews {
@@ -329,15 +392,13 @@ nav a{
   justify-content: space-between;
 }
 
-.reviews p{
-  font-family: 'Gilroy Light';
+.reviews p {
+  font-family: "Gilroy Light";
 }
 
 .review {
   display: flex;
   text-align: center;
-  /* flex-direction: column;
-    align-items: center; */
   justify-content: space-between;
   width: 30%;
   height: 100%;
@@ -354,6 +415,14 @@ nav a{
   align-items: center;
 }
 
+.review :nth-child(2) p {
+  font-family: "Gilroy Regular Italic";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #181725;
+}
+
 .reviewer {
   display: flex;
   justify-content: space-between;
@@ -364,7 +433,17 @@ nav a{
 
 .reviewer img {
   width: 100%;
-  backdrop-filter: blur(4px);
+  background-image: url("./visual assets/Ellipse\ 1.svg");
+  background-position: center;
+  border-radius: 80px;
+}
+
+.reviewer p {
+  font-family: "Gilroy Bold";
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  color: #030303;
 }
 
 .stats {
@@ -375,8 +454,8 @@ nav a{
   margin: 3% auto;
 }
 
-.stats p{
-  font-family: 'Gilroy Light';
+.stats p {
+  font-family: "Gilroy Light";
 }
 
 .rent {
@@ -387,12 +466,15 @@ nav a{
 
 .rent button {
   background: #53b175;
+  height: 66px;
+  width: 233px;
   border-radius: 19px;
-  color: white;
-  height: 50px;
-  width: 25%;
   cursor: pointer;
-  font-family: 'Gilroy Light';
+  font-family: "Gilroy Extra Bold";
+  font-size: 20px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFF9FF;
 }
 
 footer {
@@ -401,8 +483,8 @@ footer {
   height: 30vh;
 }
 
-footer p{
-  font-family: 'Gilroy Medium';
+footer p {
+  font-family: "Gilroy Medium";
 }
 
 footer main {
@@ -425,17 +507,27 @@ footer > main > span:nth-child(3) {
   width: 10%;
 }
 
-footer > span{
+footer > span {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   width: 8%;
 }
 
-@media only screen and (max-width:769px)  {
-  html,body{
+@media only screen and (max-width: 769px) {
+  html,
+  body {
     overflow-x: hidden;
   }
+
+  header > nav {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0 0;
+}
 
   nav > ul {
     display: none;
@@ -454,7 +546,7 @@ footer > span{
     display: none;
   }
 
-  nav ul{
+  nav ul {
     transform: translateY(-800px);
     flex-direction: column;
     width: 100%;
@@ -466,13 +558,13 @@ footer > span{
     left: 0;
     z-index: 1;
     align-items: center;
-}
+  }
 
-  nav a{
+  nav a {
     color: white;
   }
 
-  nav ul.show{
+  nav ul.show {
     transform: translateY(0);
     display: flex;
     flex-direction: column;
@@ -495,14 +587,14 @@ footer > span{
     -o-transition-delay: 0.5s;
     -moz-transition-delay: 0.5s;
     transition-delay: 0.5s;
-}
+  }
 
-  #hamburger{
+  #hamburger {
     display: block;
     height: 100%;
   }
 
-  .search{
+  .search {
     position: absolute;
     left: 33%;
     padding: 5%;
@@ -531,11 +623,19 @@ footer > span{
   }
 
   .borrow h1 {
-    font-family: 'Gilroy Bold';
-    font-size: 2rem;
+    font-family: "Gilroy Extra Bold";
+    font-size: 1.5rem;
     /* line-height: 30px; */
     color: #030303;
     text-align: left;
+  }
+
+  .borrow p {
+    font-family: "Gilroy Medium";
+    color: #030303;
+    text-align: left;
+    font-size: 1rem;
+    color: #000000;
   }
 
   .borrow button {
@@ -546,26 +646,29 @@ footer > span{
     width: 80%;
   }
 
-  .heroimg{
-    text-align: center;
-    padding: 10%;
+  .heroimg {
+    height: 50%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
   }
 
-  .heroimg img{
-    width: 100%;
+  .heroimg img {
+    width: 80%;
+    height: 100%;
   }
 
   #secondsection {
-    height: 150vh;
+    height: 180vh;
     background-color: #53b175;
   }
 
   #secondsection h2 {
     color: hsl(0deg 0% 100%);
     margin: 5% 0;
-}
+  }
 
-  #secondsection main{
+  #secondsection main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -578,6 +681,14 @@ footer > span{
     align-items: center;
   }
 
+  #secondsection > main > div:nth-child(1) > h2 {
+    padding: 5% 0 0;
+    font-family: "Gilroy Bold";
+    font-size: 1.5rem;
+    line-height: 28px;
+    color: #fafafa;
+}
+
   #offer {
     display: flex;
     flex-direction: column;
@@ -585,7 +696,6 @@ footer > span{
     height: 100%;
     width: 100%;
     align-items: center;
-    overflow-x: scroll;
   }
 
   .offer {
@@ -593,16 +703,40 @@ footer > span{
     width: 80%;
     border-radius: 23px;
     height: 23%;
-    padding: 5%;
+    padding: 2%;
     background-color: white;
+  }
+
+  .offer h3 {
+    font-family: "Gilroy Bold";
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left;
+    color: #030303;
+    padding: 5px 0;
+}
+
+  .offer img {
+    position: absolute;
+    bottom: 90%;
+    left: 45%;
+    height: 30px;
   }
 
   #categories {
     display: flex;
     align-items: center;
-    height: 30%;
+    height: 50%;
     /* margin-top: 3%; */
   }
+
+  #categories h2 {
+    font-family: "Gilroy Extra Bold";
+    font-size: 1.5rem;
+    line-height: 28px;
+    color: #fcfcfc;
+    padding-top: 5%;
+}
 
   .categories {
     display: flex;
@@ -611,7 +745,7 @@ footer > span{
     /* align-items: center; */
     height: 70%;
     width: 100%;
-    overflow-x: scroll;
+    overflow-x: auto;
     /* transform: translateX(-100px); */
   }
 
@@ -625,7 +759,7 @@ footer > span{
     border-radius: 10px;
     height: 100%;
   }
-  
+
   .asset {
     padding: 3%;
     width: 500px;
@@ -640,39 +774,46 @@ footer > span{
 
   .asset img {
     width: 100%;
-}
+  }
 
-  .asset > div:nth-child(1){
+  .asset > div:nth-child(1) {
     padding: 2%;
     height: 50%;
     display: flex;
     align-items: center;
   }
 
-  .asset > div:nth-child(2){
+  .asset > div:nth-child(2) {
     height: 40%;
     display: flex;
     flex-direction: column;
-    justify-content:unset
+    justify-content: unset;
   }
 
-  .asset > div:nth-child(2) img{
+  .asset > div:nth-child(2) img {
     /* width: 20%; */
     padding: 2%;
     height: 30px;
     width: 50px;
     border-radius: 10px;
-    background-color:#53b175;
+    background-color: #53b175;
   }
 
   #thirdsection {
     background: #fcfcfc;
-    height: 100vh;
+    height: 150vh;
   }
+
+  #thirdsection > main {
+    height: 100%;
+    width: 90%;
+    margin: 0% auto;
+}
 
   #thirdsection h3 {
     padding: 4% 0;
-}
+    font-size: 1.5rem;
+  }
 
   .reviews {
     height: 50%;
@@ -689,20 +830,20 @@ footer > span{
       align-items: center; */
     justify-content: space-between;
     width: 100%;
-    height: 50%;
+    height: 25%;
     padding: 2%;
     border-radius: 18px;
     border: 1px solid #53b175;
     background-color: white;
   }
-  
+
   .review div {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
   }
-  
+
   .reviewer {
     display: flex;
     justify-content: space-between;
@@ -710,7 +851,7 @@ footer > span{
     text-align: center;
     height: 70%;
   }
-  
+
   .reviewer img {
     width: 100%;
     backdrop-filter: blur(4px);
@@ -724,7 +865,7 @@ footer > span{
     margin: 10% auto;
   }
 
-  .stats img{
+  .stats img {
     width: 5vw;
     height: 50%;
   }
@@ -733,8 +874,9 @@ footer > span{
     background: #53b175;
     border-radius: 19px;
     color: white;
-    height: 50px;
-    width: 50%;
+    height: 66px;
+    width: 233px;
+    border-radius: 19px;
     cursor: pointer;
   }
 
@@ -744,15 +886,14 @@ footer > span{
     width: 30%;
   }
 
-  footer > main > span:nth-child(3) img{
+  footer > main > span:nth-child(3) img {
     width: 5vw;
   }
 
-  footer > span{
+  footer > span {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     width: 30%;
   }
-
 }
