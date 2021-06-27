@@ -1,134 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ</title>
-
-    <!--bootstrap link-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!--JavaScript link-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
- 
-    <!--Fontawesome link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--css stylesheet-->
-    <link rel="stylesheet" href="assets/faq.css">
-
-</head>
-
-<body>
-
-    <nav class="navbar navbar-expand-lg mt-5 x-6 navbar-light">
-
-        <a class="navbar-brand ml-5" href="#"><span>a</span>y<span>a</span>l<span>o</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="true" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-
-          <ul class="navbar-nav ml-auto mr-5 mt-lg-2">
-
-            <form class="form-inline m-5 my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search For Equipment">
-            </form> 
-
-            <li class="nav-item active ml-5 mr-0">
-              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active ml-5">
-              <a class="nav-link" href="#">FAQ</a>
-            </li>
-
-            <li class="nav-item active ml-5">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-
-            <button class="btn btn-success ml-5 my-2 my-sm-0" type="submit">Sign Up</button>
-            <button class="btn btn-outline-success mr-5 ml-3" type="submit">Log In</button>
-          
-          </ul>
-          
-        </div>
-
+    <link rel="stylesheet" href="assets/faq.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h6><span>a</span>y<span>a</span>l<span>o</span></h6>
+        <input
+          type="search"
+          name=""
+          id=""
+          placeholder="Search for Equipments "
+          value=""
+        />
+        <img
+          src="./assets/visual assets/search icon.svg"
+          alt=""
+          class="search"
+        />
+        <ul id="nav-ul">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="./contact-me.html">Contact</a></li>
+          <input type="button" value="Sign up" />
+          <input type="button" value="Log in" />
+        </ul>
+        <img
+          src="./assets/visual assets/icon-hamburger.svg"
+          alt=""
+          id="hamburger"
+          onclick=" toggleMenu()"
+        />
+        <img
+          src="./assets/visual assets/icon-close.svg"
+          alt=""
+          id="close"
+          style="display: none; position: relative; z-index: 3; cursor: pointer"
+          onclick=" toggleMenu()"
+        />
       </nav>
-
-      <div class="container">
-
-        <h2>FAQ</h2>
-
-        <h5>How do i rent an equipment?</h5>
-        <p>The cost to rent an equipement differs acoording to the category of the equipment and the Lessor. 
-          You can the find the cost of an equipment when you browse the explore page.
-        </p>
-
-        <hr>
-
-        <h5>How much does it cost to rent an equipment?</h5>
-        <p>The cost to rent an equipement differs acoording to the category of the equipment and the Lessor. 
-          You can the find the cost of an equipment when you browse the explore page.
-        </p>
-
-        <hr>
-
-        <h5>How do i start renting out my equipments?</h5>
-        <p>The cost to rent an equipement differs acoording to the category of the equipment and the Lessor. 
-          You can the find the cost of an equipment when you browse the explore page.
-        </p>
-
-        <hr>
-
-        <h5>What kind of equipment can i get on Ayalo?</h5>
-        <p>The cost to rent an equipement differs acoording to the category of the equipment and the Lessor. 
-          You can the find the cost of an equipment when you browse the explore page.
-        </p>
-
-        <hr>
-
-        <h5>How do i get the equipments?</h5>
-        <p>The cost to rent an equipement differs acoording to the category of the equipment and the Lessor. 
-          You can the find the cost of an equipment when you browse the explore page.
-        </p>
-
-        <hr>
-
-        <h5>How much will it cost to rent out my equipment on Ayalo?</h5>
-        <p>The cost to rent an equipement differs acoording to the category of the equipment and the Lessor. 
-          You can the find the cost of an equipment when you browse the explore page.
-        </p>
-
-      </div>
-
-      <div class="footer">
-
-        <div class="contact">
-
-          <p><img src="assets/visual assets/phone.png" alt=""> 08123756120, 09098793301</p>
-          <p><img src="assets/visual assets/address.png" alt=""> 21, Babare Street, Magado, Lagos State</p>
-          <p><a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-envelope"></a>
+    </header>
+    <div class="container">
+      <main>
+        <h1>FAQ</h1>
+        <div>
+          <h2>How do i rent an equipment?</h2>
+          <p>
+            The cost to rent an equipement differs acoording to the category of
+            the equipment and the Lessor. <br />
+            You can the find the cost of an equipment when you browse the
+            explore page.
           </p>
-
         </div>
-
-        <div class="copy-right">
-
-          <img src="assets/visual assets/copy right.png" alt=""> 2021 Ayalo
-
+        <hr />
+        <div>
+          <h2>How much does it cost to rent an equipment?</h2>
+          <p>
+            The cost to rent an equipement differs acoording to the category of
+            the equipment and the Lessor. <br />
+            You can the find the cost of an equipment when you browse the
+            explore page.
+          </p>
         </div>
-        
-      </div>
-
-</body>
-
+        <hr />
+        <div>
+          <h2>How do i start renting out my equipments?</h2>
+          <p>
+            The cost to rent an equipement differs acoording to the category of
+            the equipment and the Lessor. <br />
+            You can the find the cost of an equipment when you browse the
+            explore page.
+          </p>
+        </div>
+        <hr />
+        <div>
+          <h2>What kind of equipment can i get on Ayalo?</h2>
+          <p>
+            The cost to rent an equipement differs acoording to the category of
+            the equipment and the Lessor. <br />
+            You can the find the cost of an equipment when you browse the
+            explore page.
+          </p>
+        </div>
+        <hr />
+        <div>
+          <h2>How do i get the equipments?</h2>
+          <p>
+            The cost to rent an equipement differs acoording to the category of
+            the equipment and the Lessor. <br />
+            You can the find the cost of an equipment when you browse the
+            explore page.
+          </p>
+        </div>
+        <hr />
+        <div>
+          <h2>How much will it cost to rent out my equipment on Ayalo?</h2>
+          <p>
+            The cost to rent an equipement differs acoording to the category of
+            the equipment and the Lessor. <br />
+            You can the find the cost of an equipment when you browse the
+            explore page.
+          </p>
+        </div>
+        <hr />
+      </main>
+    </div>
+    <footer>
+      <main>
+        <span>
+          <img src="./assets/visual assets/Vector, 2.svg" />
+          <p>08123756120, 09098793301</p>
+        </span>
+        <span>
+          <img src="./assets/visual assets/Vector 3.svg" alt="" />
+          <p>21, Babare Street, Magado, Lagos State</p>
+        </span>
+        <span>
+          <img src="./assets/visual assets/Vector 4.svg" alt="" />
+          <img src="./assets/visual assets/Vector 5.svg" alt="" />
+          <img src="./assets/visual assets/Vector 6.svg" alt="" />
+          <img src="./assets/visual assets/Vector 8.svg" alt="" />
+        </span>
+      </main>
+      <span
+        ><img src="./assets/visual assets/copyright.svg" alt="" />
+        <p>2021 Ayalo</p></span
+      >
+    </footer>
+  </body>
+  <script src="./assets/index.js"></script>
 </html>

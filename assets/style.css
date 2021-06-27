@@ -209,12 +209,11 @@ nav a {
   color: #000000;
 }
 
-.borrow button {
+.borrow a button {
   background: #53b175;
   color: white;
   border-radius: 19px;
   height: 66px;
-  width: 233px;
   width: 370px;
   font-family: "Gilroy Extra Bold";
   font-size: 20px;
@@ -638,12 +637,12 @@ footer > span {
     color: #000000;
   }
 
-  .borrow button {
+  .borrow a button {
     background: #53b175;
     color: white;
     border-radius: 19px;
-    height: 20%;
-    width: 80%;
+    height: 66px;
+    width: 200px;
   }
 
   .heroimg {
