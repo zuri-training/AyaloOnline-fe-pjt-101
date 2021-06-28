@@ -1,19 +1,19 @@
 /* Font Style*/
 
 @font-face {
-    src:url(./assets/fonts/gilroy/Gilroy-ExtraBold.ttf);
+    src:url(./fonts/gilroy/Gilroy-ExtraBold.ttf);
     font-family:'Gilroy-Extra-Bold';   
 }
 @font-face {
-    src:url(./assets/fonts/gilroy/Gilroy-Regular.ttf);
+    src:url(./fonts/gilroy/Gilroy-Regular.ttf);
     font-family:'Gilroy-Regular';
 }
 @font-face {
-    src:url(./assets/fonts/gilroy/Gilroy-Medium.ttf);
+    src:url(./fonts/gilroy/Gilroy-Medium.ttf);
     font-family:'Gilroy-Medium';
 }
 @font-face {
-    src:url(./assets/fonts/gilroy/Gilroy-SemiBold.ttf);
+    src:url(./fonts/gilroy/Gilroy-SemiBold.ttf);
     font-family:'Gilroy-SemiBold';
 }
 
