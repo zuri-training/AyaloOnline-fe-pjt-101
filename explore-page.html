@@ -3,16 +3,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Explore Page</title>
     <link rel="stylesheet" href="./assets/explore-page.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <!--bootstrap link-->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
 </head>
 <body>
     <header>
+        <!-- Mobile View Header -->
         <div class="header">
             
             <a href="./index.html" class="back-btn"><img src="./assets/visual assets/back.svg" alt=""></a>
             <p>Explore Equipment</p>
+        </div>
+        <!-- Desktop View Header -->
+        <div class="desktop-header">
+            <img class="logo" src="./assets/visual assets/Ayalo Logo.svg" alt="">
+            <input type="text" placeholder="Search for Equipments">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#">Explore</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <!-- <li><a href="#"><img class="account" src="./assets/visual assets/account.svg" alt=""></a></li> -->
+                </ul>
+            </nav>
+            <img class="account" src="./assets/visual assets/account.svg" alt="">
+
         </div>
     </header>
     <main>
@@ -88,9 +107,17 @@
     
             </div>
         </div>
-        <div class="desktop-view">
-            <P>Please switch to mobile view, web-view is under development</P>
+
+        <!-- Desktop View Content -->
+        <div class="desktop-content">
+            <div class="top">
+                
+                <div>Explore Equipment</div>
+                <a href="./index.html" class="fwd-btn"><img src="./assets/visual assets/forward.svg" alt="forward button"></a>
+            </div>
+            
         </div>
+        
         
     </main>
     <footer>

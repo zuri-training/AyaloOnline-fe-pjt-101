@@ -1,32 +1,116 @@
 /* Font Style*/
 
 @font-face {
-    src:url('/assets/fonts/gilroy/Gilroy-Bold.ttf');
-    font-family:'Gilroy';
+    src:url(/assets/fonts/gilroy/Gilroy-ExtraBold.ttf);
+    font-family:'Gilroy-Extra-Bold';   
+}
+@font-face {
+    src:url(/assets/fonts/gilroy/Gilroy-Regular.ttf);
+    font-family:'Gilroy-Regular';
+}
+@font-face {
+    src:url(/assets/fonts/gilroy/Gilroy-Medium.ttf);
+    font-family:'Gilroy-Medium';
+}
+@font-face {
+    src:url(/assets/fonts/gilroy/Gilroy-SemiBold.ttf);
+    font-family:'Gilroy-SemiBold';
 }
 
 /* Desktop View*/
 @media screen and (min-width:541px) {
-    header, footer, div.all-rows,input[type=text] {
+    header div.header, footer, div.all-rows,main input[type=text] {
         display: none;
     }  
-    div.desktop-view{
-        width: 50%;
-        margin: auto;
-        font-size:xx-large;
+    /* Curent Design */
+    div.desktop-header, main{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+        overflow: hidden;
     }
+    .navigation{
+        flex: 1;
+        text-align: right;
+    }
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 4vw;
+        font-family:'Gilroy-SemiBold';
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    nav ul li a:hover {
+        color:#53B175;
+    }
+    .logo{
+        width: 13vw;
+        cursor: pointer;
+        margin: 30px 0;
+    }
+
+     input[type=text]{
+        width: 23.5%;
+        padding: 1em;
+        margin-left: 1em;
+        background-color: #f2f3f2;
+        padding: 0.6em;
+        border-radius: .6em;
+        border: 1px solid #f2f3f2;
+        background-image: url('./visual assets/search.svg');
+        background-repeat: no-repeat;
+        background-position: 93%;
+        background-size: 10px ;
+    } 
+    ::placeholder {
+        color: #7c7c7c;
+        text-align: center;
+        font-family: 'Gilroy-Regular';
+        font-size: 0.698em;
+        padding: auto;
+    }
+
+    .desktop-content div.top{
+        display:flex;
+        flex-direction: row;
+        overflow: auto;
+    }
+    .desktop-content div.top div{
+        display: flex;
+        font-family: 'Gilroy-Extra-Bold';
+        font-size: 1.25em;
+        float: left;
+    }
+    .desktop-content div.top .fwd-btn{
+        
+        float: right;
+    }
+
+}
+/* Hide The Search Icon While Collapsing the screen */
+@media screen and (min-width:541px) and (max-width:800px) {
+    input[type=text]{
+        background-image: none;
+    }
+
 }
 
 
 /* Mobile View */
-@media screen 
-    and (min-width:320px)
-    and (max-width:540px){
+@media screen and (max-width:540px){
     
         *{
             margin: 0;
             padding: 0;
-            font-family:'Gilroy';
+            font-size: 16px;
+            font-family:'Gilroy-Extra-Bold';
         }
 
         body{
@@ -51,6 +135,8 @@
             text-align: center;
             line-height: 2em;
             font-weight: bold;
+            font-family:'Gilroy-Extra-Bold';
+            font-size: 1.25em;
         }
         main{
             text-align: center;
@@ -76,6 +162,8 @@
         ::placeholder {
             color: #7c7c7c;
             text-align: center;
+            font-family: 'Gilroy-Regular';
+            font-size: 0.75em;
         }
 
         div.all-rows{
@@ -139,7 +227,7 @@
             border-top-right-radius: 1.5em;
             border-top-left-radius: 1.5em;
             box-shadow:0px 1px 26px rgba(37, 37, 37, 0.75);
-            
+
         }
        
 
@@ -163,6 +251,8 @@
             color: black;
             /* background-color: transparent; */
             -webkit-tap-highlight-color: transparent;
+            font-size: 0.75em;
+            font-family: "Gilroy-SemiBold";
 
         }
 
@@ -185,6 +275,9 @@
         } */
 
         div.desktop-view{
+            display: none;
+        }
+        div.desktop-header{
             display: none;
         }
     }

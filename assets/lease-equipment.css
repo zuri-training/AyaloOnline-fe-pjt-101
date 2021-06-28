@@ -16,6 +16,10 @@
     src:url(/assets/fonts/gilroy/Gilroy-SemiBold.ttf);
     font-family:'Gilroy-SemiBold';
 }
+@font-face {
+    src:url(/assets/fonts/gilroy/Gilroy-Bold.ttf);
+    font-family:'Gilroy-Bold';
+}
 
 /* Desktop View*/
 @media screen and (min-width:541px) {
@@ -41,11 +45,12 @@
             padding: 0;
             font-size: 16px;
             font-family:'Gilroy-Extra-Bold';
+            
         }
      
 
         body{
-        background-color: #fcfcfc;
+            background-color: #fcfcfc;
         }
         
         .header{
@@ -54,12 +59,26 @@
             margin-top: 3em;
             margin-left: 8%;
             margin-bottom: 4%;
-        
         }
+        .section-text{
+            display: flex;
+            flex-direction: row;
+            margin-left: 8%;
+            width: 80%;  
+            font-size: 1.5em;
+            font-family: 'Gilroy-SemiBold';
+        }
+        .section-text p{
+            font-size: 3.5vw;
+        }
+
         .back-btn{
             /* margin-left: 26px; */
             margin-top: auto;
             margin-bottom: auto;
+        }
+        .forward-btn{
+            margin-right: 100%;
         }
         .header p{
             width:100%;
@@ -96,6 +115,52 @@
             text-align: center;
             font-family: 'Gilroy-Regular';
             font-size: 0.75em;
+        }
+        .top-card{
+            width: 90%;
+            border: 1px solid #53B175;
+            margin-left: 8%;
+            margin-right: 8%;
+            border-radius: 1em;
+            display: flex;
+            flex-direction: row;
+            height: 25vw;
+            margin-bottom: 4%;
+            margin-top: 4%;
+            padding-top: 1em;
+            
+        }
+        .inner{
+            margin:auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .notification-bell{
+            width: 12vw;
+            height: 12vw;
+            margin-left: 1em;
+            margin-right: 1em;
+            margin-top:0.5em;
+        }
+        .display-text{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            /* margin-left: 7vw; */
+            
+        }
+        .top-text,.bottom-text{
+            font-size: 3.5vw;
+            font-family:'Gilroy-Bold';
+            width: 80%;
+        }
+        .top-text{
+            margin-bottom: 0.6em;
+            font-size:1.125em;
+            font-size: 3.5vw;
+            color: #53B175;
+            font-family: 'Gilroy-Extra-Bold';
         }
 
         div.all-rows{
