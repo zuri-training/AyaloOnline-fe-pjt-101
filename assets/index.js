@@ -6,11 +6,13 @@ const cover = document.getElementById('cover');
 const signup = document.querySelector('.signup');
 const linkApple = document.querySelector('.apple-store');
 const linkGoogle = document.querySelector('.google-play');
+const rent = document.querySelector('.rent-equipment')
 
 cover.addEventListener('click', toggleMenu);
 signup.addEventListener('click', signupPage);
 linkApple.addEventListener('click', appleStore);
 linkGoogle.addEventListener('click', googlePlay);
+rent.addEventListener('click', rentEquipment );
 
 
 function toggleMenu() {
@@ -51,5 +53,9 @@ function appleStore() {
 
 function googlePlay() {
     window.location.href = "https://play.google.com/store/apps";
+}
+
+function rentEquipment() {
+    window.location.href = "explore-page.html";
 }
 
