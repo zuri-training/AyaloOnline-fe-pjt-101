@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayalo Online Platform</title>
+    <link rel="stylesheet" href="assets//profile-details.css" />
+    <script src="js/profile-details.js" defer></script>
+</head>
+<body>
+    <div id="cover"></div>
+    <header class="header">
+        <div class="icon-div">
+            <img src="./assets/visual assets/ayalo.svg" alt="Ayalo Logo"/>
+        </div>
+        <div class="nav-div">
+            <div class="header-items search-item">
+                <input type="search" name="" id="" placeholder="Search for Equipments ">
+                <img src="./assets/visual assets/search icon.svg" alt="search icon" />
+            </div>
+            <nav class="header-items link-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">My Rents</a></li>
+                    <li><a href="#">Activity</a></li>
+                </ul>
+            </nav>
+            <div class="header-items" >
+                <div class="menu-div">
+                    <img src="./assets/visual assets/user.svg" alt="icon" class="user">
+                    <img src="./assets/visual assets/arrow.svg" alt="icon" class="arrow">
+                </div>
+            </div>
+        </div>
+        <nav class="submenu">
+            <div>
+                <img src="./assets/visual assets/profile.svg" alt="icon" />
+                <a href="#">Profile details</a>
+            </div>
+            <div>
+                <img src="./assets/visual assets/verify.svg" alt="icon" />
+                <a href="#">Verification</a>
+            </div>
+            <div>
+                <img src="./assets/visual assets/password.svg" alt="icon" />
+                <a href="#">Change password</a>
+            </div>
+            <div>
+                <img src="./assets/visual assets/payment.svg" alt="icon" />
+                <a href="#">My payments</a>
+            </div>
+            <div>
+                <img src="./assets/visual assets/bell.svg" alt="icon" />
+                <a href="#">Notification</a>
+            </div>
+        </nav>
+        <div class="hamburger-menu">
+            <img src="./assets/visual assets/icon-hamburger.svg" alt="" id="hamburger" onclick=" toggleMenu()" >
+            <img src="./assets/visual assets/icon-close.svg" alt="" id="close" onclick=" toggleMenu()" >
+        </div>
+    </header>
+    
+    <section>
+        <h2>Profile Details</h2>
+        <div class="forms">
+            <form>
+                <div class="input">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name" class="info" placeholder="Enter your first name" />
+                </div>
+
+                <div class="input">
+                    <label for="user-name">Username</label>
+                    <input type="text" name="user-name" id="user-name" class="info" placeholder="Enter your user name" />
+                </div>
+
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="info" placeholder="Enter your email" />
+                </div>
+
+                <div class="input">
+                    <label for="account-type">Account Type</label>
+                    <select class="select" name="account-type" id="account-type">
+                        <option value="lessee">Lessee</option>
+                        <option value="lessor">Lessor</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label for="biz-address">Business Address</label>
+                    <input type="email" name="biz-address" id="biz-address" class="info" placeholder="Enter your business address" />
+                </div>
+
+                <div class="input">
+                    <label for="verify">Account Type</label>
+                    <select class="select" name="verify" id="verify">
+                        <option value="BVN">BVN</option>
+                        <option value="NIN">NIN</option>
+                    </select>
+                </div>
+            </form>
+
+            <form>
+                <div class="input">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name" class="info" placeholder="Enter your last name" />
+                </div>
+
+                <div class="input">
+                    <label for="gender">Gender</label>
+                    <select class="select" name="gender" id="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+
+                <div class="input">
+                    <label for="number">Phone Number</label>
+                    <input type="number" name="number" id="number" class="info" placeholder="+234" />
+                </div>
+
+
+                <div class="input">
+                    <label for="bizName">Business Name</label>
+                    <input type="text" name="bizName" id="bizName" class="info" placeholder="Enter your business name" />
+                </div>
+
+                <div class="input">
+                    <label for="cac">CAC No</label>
+                    <input type="text" name="cac" id="cac" class="info" placeholder="Enter your CAC No" />
+                </div>
+
+                <div class="input bvn-input">
+                    <label for="bvn">Bank Verification Number (BVN)</label>
+                    <input type="number" name="bvn" id="bvn" class="info" placeholder="Enter your BVN" />
+                </div>
+
+                <div class="input nin-input id-type">
+                    <label for="nin">National Identity Number (NIN)</label>
+                    <input type="number" name="nin" id="nin" class="info" placeholder="Enter your NIN" />
+                </div>
+            </form>
+        </div>
+        <button class="submit">Submit</button>
+    </section>
+
+</body>
+</html>

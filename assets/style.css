@@ -1,25 +1,25 @@
-﻿/*@font-face {
-    font-family: "Gilroy Bold";
+﻿@font-face {
+    font-family: "gilroy-bold";
     src: url("./fonts/Gilroy-Bold.ttf");
+    font-display: block;
 }
 
 @font-face {
-    font-family: "Gilroy Medium";
+    font-family: "gilroy";
     src: url("./fonts/Gilroy-Medium.ttf");
+    font-display: block;
 }
 
 @font-face {
-    font-family: "Gilroy Regular";
+    font-family: "gilroy-regular";
     src: url("./fonts/Gilroy-Regular.ttf");
-}*/
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /*font-family: "Gilroy Bold", sans-serif;
-    font-family: "Gilroy Medium", sans-serif;
-    font-family: "Gilroy Regular", sans-serif;*/
+    font-family: "gilroy", sans-serif;
 }
 
 a {
@@ -27,6 +27,7 @@ a {
 }
 
 h3 {
+    font-family: "gilroy-bold", sans-serif;
     font-size: 21px;
     color: #53b175;
     line-height: 1.5;
@@ -49,7 +50,6 @@ ul {
     display: none;
     position: relative;
     z-index: 3;
-    width: 50%;
     padding-left: 20%;
     cursor: pointer;
 }
@@ -98,7 +98,7 @@ ul {
     display: flex;
     flex-flow: wrap;
     width: 90%;
-    margin: 0 auto 3rem auto;
+    margin: 1.2rem auto 3rem auto;
 }
 
 #third-section h3 {
@@ -107,7 +107,7 @@ ul {
 
 #fourth-section {
     width: 90%;
-    margin: 1rem auto 3rem auto;
+    margin: 1.2rem auto 3rem auto;
 }
 
 #fourth-section > p {
@@ -208,10 +208,6 @@ ul {
     margin: 0.4rem 0 0 0.6rem;
 }
 
-.figure span:first-child {
-    margin-top: 1.2rem;
-}
-
 .footer {
     background: #53b175;
     padding: 1rem 0.6rem;
@@ -245,7 +241,6 @@ ul {
 
 .foot-a img {
     width: 100px;
-    margin-bottom: 0.7rem 0.5rem;
 }
 
 .foot-a p {
@@ -283,7 +278,7 @@ ul {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 2.2rem;
 }
 
 .link-items li {
@@ -310,7 +305,6 @@ ul {
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 35vh;
         padding: 0.6rem 0;
         background-color: rgb(255, 255, 255);
         border-bottom: 9px solid rgba(180, 180, 180, 0.6);
@@ -367,7 +361,7 @@ ul {
     display: flex;
     width: 40%;
     justify-content: center;
-    //margin: 2rem auto 2.3rem auto;
+    margin: 2.2rem auto 1.5rem auto;
     padding: 0.6rem 1rem;
     background: #53b175;
     border: none;
@@ -409,6 +403,7 @@ ul {
     }
 
     .subtext h2 {
+        font-family: "gilroy-bold", sans-serif;
         width: 288px;
         margin-bottom: 0.7rem;
     }
@@ -493,6 +488,10 @@ ul {
         flex-flow: wrap;
     }
 
+    .signup {
+        width: 10rem;
+    }
+
     .stats-div {
         justify-content: space-around;
         flex-flow: wrap;
@@ -509,7 +508,7 @@ ul {
         flex-direction: row;
         justify-content: center;
         margin-top: 3rem;
-        background-image: url("../Contact page/icons/opacity.png");
+        background-image: url("visual assets/opacity.png");
         background-repeat: no-repeat;
         background-position: left bottom;
         background-position: left 7%;
@@ -535,7 +534,7 @@ ul {
 
         #third-section h3 {
             text-align: left;
-            width: 250px;
+            width: 253px;
         }
 
     #fourth-section {
@@ -614,7 +613,6 @@ ul {
     }
 
         .icon-div img {
-            width: 110px;
             margin-top: 0;
         }
 
@@ -625,7 +623,7 @@ ul {
 
     .link-items li {
         margin: 0.3rem 1rem;
-        font-size: 16px;
+        font-size: calc(14px + 2 * ((100vw - 769px) / 671));
     }
 
     .nav-div {
@@ -653,6 +651,7 @@ ul {
     .signup {
         width: 140px;
         align-items: center;
+        margin: 0;
         padding: 0.3rem 1rem;
         font-size: 16px;
     }

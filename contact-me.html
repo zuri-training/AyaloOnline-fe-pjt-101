@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,104 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact me</title>
     <link rel="stylesheet" href="./assets/contact.css" />
+    <script src="js/contact-me.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <h6><span>a</span>y<span>a</span>l<span>o</span></h6>
-        <input
-          type="search"
-          name=""
-          id=""
-          placeholder="Search for Equipments "
-          value=""
-        />
-        <img
-          src="./assets/visual assets/search icon.svg"
-          alt=""
-          class="search"
-        />
-        <ul id="nav-ul">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-          <li><a href="./contact-me.html">Contact</a></li>
-          <input type="button" value="Sign up" />
-          <input type="button" value="Log in" />
-        </ul>
-        <img
-          src="./assets/visual assets/icon-hamburger.svg"
-          alt=""
-          id="hamburger"
-          onclick=" toggleMenu()"
-        />
-        <img
-          src="./assets/visual assets/icon-close.svg"
-          alt=""
-          id="close"
-          style="display: none; position: relative; z-index: 3; cursor: pointer"
-          onclick=" toggleMenu()"
-        />
-      </nav>
-    </header>
-    <section>
-      <main>
-        <div>
-          <h1>Contact us</h1>
-          <p>
-            Have a question? Check out the FAQ. <br> Else feel free to leave a
-            message, we’ll respond as soon as we can.
-          </p>
-        </div>
-        <form action="GET">
-          <label for="Name"> Name</label>            
-          <input
-              type="text"
-              name="Name"
-              id=""
-              placeholder="Enter your name"
-            />
-         
-          <label for="Email"> Email </label>
-            <input
-              type="email"
-              name="Email"
-              id=""
-              placeholder="Enter your email"
-            />
-         
-          <label for="Message"> Message</label>
-            <input
-              type="text"
-              name="Message"
-              id=""
-              placeholder="Enter your message"
-            />
-        </form>
-        <button>Submit</button>
-      </main>
-    </section>
-    <footer>
-      <main>
-        <span>
-          <img src="./assets/visual assets/Vector, 2.svg" />
-          <p>08123756120, 09098793301</p>
-        </span>
-        <span>
-          <img src="./assets/visual assets/Vector 3.svg" alt="" />
-          <p>21, Babare Street, Magado, Lagos State</p>
-        </span>
-        <span>
-          <img src="./assets/visual assets/Vector 4.svg" alt="" />
-          <img src="./assets/visual assets/Vector 5.svg" alt="" />
-          <img src="./assets/visual assets/Vector 6.svg" alt="" />
-          <img src="./assets/visual assets/Vector 8.svg" alt="" />
-        </span>
-      </main>
-      <span
-        ><img src="./assets/visual assets/copyright.svg" alt="" />
-        <p>2021 Ayalo</p></span
-      >
-    </footer>
+      <div id="cover"></div>
+      <header class="header">
+          <div class="icon-div">
+              <img src="./assets/visual assets/ayalo.svg" alt="Ayalo Logo" />
+          </div>
+          <div class="nav-div">
+              <nav class="header-items link-items">
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="faq.html">FAQ</a></li>
+                      <li><a href="contact-me.html">Contact Us</a></li>
+                  </ul>
+              </nav>
+              <button class="signup">Sign up</button>
+          </div>
+          <div class="hamburger-menu">
+              <img src="./assets/visual assets/icon-hamburger.svg" alt="" id="hamburger" onclick=" toggleMenu()">
+              <img src="./assets/visual assets/icon-close.svg" alt="" id="close" onclick=" toggleMenu()">
+          </div>
+      </header>
+
+      <section>
+          <main>
+              <div>
+                  <h1>Contact us</h1>
+                  <p>
+                      Have a question? Check out the FAQ. <br> Else feel free to leave a
+                      message, we’ll respond as soon as we can.
+                  </p>
+              </div>
+              <form action="GET">
+                  <label for="Name"> Name</label>
+                  <input type="text"
+                         name="Name"
+                         id=""
+                         placeholder="Enter your name" />
+
+                  <label for="Email"> Email </label>
+                  <input type="email"
+                         name="Email"
+                         id=""
+                         placeholder="Enter your email" />
+
+                  <label for="Message"> Message</label>
+                  <input type="text"
+                         name="Message"
+                         id=""
+                         placeholder="Enter your message" />
+              </form>
+              <button>Submit</button>
+          </main>
+      </section>
+
+      <footer class="footer">
+          <div>
+              <div class="foot-a">
+                  <img src="./assets/visual assets/ayalo-white.svg" alt="ayalo logo" />
+                  <p>21, Babare Street, Off Ade Street, Magado, Lagos State</p>
+                  <p>08123756120, 09098793301</p>
+              </div>
+
+              <div class="footer-sub">
+                  <div class="foot-b">
+                      <h6>More on Ayalo</h6>
+                      <a href="">About Ayalo</a>
+                      <a href="">Careers</a>
+                      <a href="faq.html">FAQS</a>
+                      <a href="contact-me.html">Contact Us</a>
+                  </div>
+
+                  <div class="foot-c">
+                      <h6>Legal</h6>
+                      <a href="#">Terms and Condition</a>
+                      <a href="#">Privacy Policy</a>
+                      <a href="#">Cookie Policy</a>
+                      <a href="#">Sitemap</a>
+                  </div>
+              </div>
+
+
+              <div class="foot-d">
+                  <h6>Be Social</h6>
+                  <a href="#"><img src="./assets/visual assets/twitter-white.svg" alt="twitter icon" /><span>Twitter</span></a>
+                  <a href="#"><img src="./assets/visual assets/instagram-white.svg" alt="instagram icon" /><span>Instagram</span></a>
+                  <a href="#"><img src="./assets/visual assets/facebook-white.svg" alt="facebook icon" /><span>Facebook</span></a>
+                  <a href="#"><img src="./assets/visual assets/Linkedin-white.svg" alt="linkedin icon" /><span>Linkedin</span></a>
+              </div>
+          </div>
+          <p>Copyright 2021 Ayalo, Inc. Terms & Privacy</p>
+      </footer>
   </body>
-  <script src="./assets/index.js"></script>
 </html>

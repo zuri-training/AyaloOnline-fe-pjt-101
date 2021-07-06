@@ -2,11 +2,13 @@
 @font-face{
     font-family: 'gilroy';
     src: url('fonts/Gilroy-Medium.ttf') format('truetype');
+    font-display: block;
 }
 
 @font-face {
     font-family: 'gilroy-bold';
     src: url('fonts/Gilroy-Bold.ttf') format('truetype');
+    font-display: block;
 }
 
 * {
@@ -63,7 +65,6 @@ p{
     display: none;
     margin-top: 30px;
 }
-
 
 .forgot {
     display: block;
