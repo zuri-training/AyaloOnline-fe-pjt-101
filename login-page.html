@@ -5,33 +5,25 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
     <link rel="stylesheet" href="assets/login-page.css" />
-  </head>
-  <body>
+    <title></title>
+
+</head>
+<body>
     <section id="login-page">
-      <form id="form">
-        <div id="login-form">
-          <h2>Log in</h2>
-          <p>Enter your email and password</p>
-          <div class="form-control">
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              value=""
-              class="info"
-              placeholder="Enter Email"
-            />
-            <small>Error message</small>
-          </div>
-          <div class="form-control">
-            <label for="password">Password</label>
-            <input type="password" id="password" value="" class="info" placeholder="Enter Password"/>
-            <img src="./assets/visual assets/password_icon.svg" alt="" id="passwordicon" onclick="togglePasswordFieldClicked()">
-            <small>Error message</small>
-          </div>
-          <a class="forgot" href="recovery-page.html">Forgot Password?</a>
+        <form>
+            <div id="login-form">
+                <h2>Log in</h2>
+                <p>Enter your email and password</p>
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input type="email" class="info" name="email" id="email" value=""/>
+                </div>
+
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" class="info" name="password" id="password" value="" />
+                </div>
 
           <button class="login">Log In</button>
 
