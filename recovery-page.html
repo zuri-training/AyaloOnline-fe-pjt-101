@@ -9,7 +9,7 @@
 	</head>
 	<body>
         <section id="recovery-page">
-            <form>
+            <form id="form">
                 <div id="recovery">
                     <h2>Recover Password</h2>
                     <p>
@@ -19,10 +19,10 @@
 
                     <div class="input">
                         <label>Email</label>
-                        <input type="email" class="email" name="email" />
+                        <input type="email" class="email" name="email" id="email-recovery" />
                     </div>
 
-                    <button>Send Link</button>
+                    <button type="submit">Send Link</button>
                 </div>
             </form>
 
@@ -38,4 +38,5 @@
         </section>
 		
 	</body>
+    <script src="./js/recovery.js"></script>
 </html>
