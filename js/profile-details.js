@@ -3,7 +3,6 @@ const hamburger = document.getElementById('hamburger');
 const close = document.getElementById('close');
 const nav = document.querySelector('.nav-div');
 const menu = document.querySelector('.menu-div');
-const arrow = document.querySelector('.arrow');
 const submenu = document.querySelector('.submenu');
 const cover = document.getElementById('cover');
 const id = document.getElementById('verify');
@@ -21,9 +20,8 @@ function toggleMenu() {
         hamburger.style.display = "block";
         enableScroll()
 
-        if (arrow.classList.contains("down")) {
+        if (submenu.classList.contains("showmenu")) {
             submenu.classList.remove("showmenu")
-            arrow.classList.remove("down");
         }
 
     } else {
@@ -41,12 +39,10 @@ menu.addEventListener('click', openMenu);
 id.addEventListener('change', changeDiv);
 
 function openMenu() {
-    if (arrow.classList.contains("down")) {
+    if (submenu.classList.contains("showmenu")) {
         submenu.classList.remove("showmenu")
-        arrow.classList.remove("down");  
     }
     else {
-        arrow.classList.add("down");
         submenu.classList.add("showmenu");
     };
 }
