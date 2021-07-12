@@ -49,10 +49,6 @@ a {
   text-decoration: none;
 }
 
-/*a:hover {
-  text-decoration: underline;
-}*/
-
 ul {
   list-style-type: none;
 }
@@ -151,7 +147,8 @@ header {
 }
 
 section {
-    height: 80vh;
+    min-height: 512px;
+    height: 60vh;
     background-color: #fcfcfc;
 }
 
@@ -298,6 +295,7 @@ main button {
     }
 
     .foot-d img {
+        width: 30px;
         margin: 0.4rem 0.5rem;
         vertical-align: middle;
     }
@@ -313,6 +311,10 @@ main button {
   body {
     overflow-x: hidden;
   }
+
+    #hamburger {
+        margin-top: 0.5rem;
+    }
 
     .hamburger-menu {
         display: block;
@@ -468,7 +470,6 @@ main button {
         }
 
         .foot-d img {
-            width: 30px;
             margin: 0.5rem 0.5rem;
             vertical-align: initial;
         }
@@ -483,6 +484,10 @@ main button {
     html,
     body {
         overflow-x: hidden;
+    }
+
+    #hamburger {
+        margin-top: 0.5rem;
     }
 
     .hamburger-menu {
@@ -561,6 +566,10 @@ main button {
         font-size: 14px;
         font-weight: 600;
         color: #FCFCFC;
+    }
+
+    section {
+        height: 80vh;
     }
 
     section > main {
@@ -646,7 +655,6 @@ main button {
     }
 
         .foot-d img {
-            width: 30px;
             margin: 0.5rem 0.5rem;
             vertical-align: initial;
         }

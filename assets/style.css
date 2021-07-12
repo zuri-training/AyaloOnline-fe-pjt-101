@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+button {
+    outline: none;
+}
+
 h3 {
     font-family: "gilroy-bold", sans-serif;
     font-size: 21px;
